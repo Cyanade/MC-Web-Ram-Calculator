@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>System RAM Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>System RAM Calculator</h1>
+  <form>
+    <label for="mc-version">Minecraft Version:</label>
+    <select id="mc-version" name="mc-version">'
+      <option value="0.65">Minecraft 1.19</option>
+      <option value="0.40">Minecraft 1.18</option>
+      <option value="0.35">Minecraft 1.17</option>
+      <option value="0.30">Minecraft 1.16</option>
+      <option value="0.25">Minecraft 1.15</option>
+      <option value="0.25">Minecraft 1.14</option>
+      <option value="0.22">Minecraft 1.13</option>
+      <option value="0.20">Minecraft 1.12</option>
+      <option value="0.18">Minecraft 1.11</option>
+      <option value="0.15">Minecraft 1.10</option>
+      <option value="0.15">Minecraft 1.9</option>
+      <option value="0.10">Minecraft 1.8</option>
+      <option value="0.05">Minecraft 1.7</option>
+    </select><br><br>
+    <label for="num-players">Number of Players:</label>
+    <select id="num-players" name="num-players">
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="40">40</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+      <option value="150">150</option>
+    </select><br><br>
+    <label for="num-plugins">Number of Plugins:</label>
+    <select id="num-plugins" name="num-plugins">
+      <option value="0">0</option>
+      <option value="10">10</option>
+      <option value="20">20</option>
+      <option value="30">30</option>
+      <option value="50">50</option>
+    </select><br><br>
+    <input type="button" value="Calculate" onclick="calculateRAM()">
+  </form>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
